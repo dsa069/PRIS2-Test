@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIS2 Tests</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-container">
+            <h1>Cuestionarios de PRIS2</h1>
+            <p>Selecciona el modo de cuestionario:</p>
+            
+            <form action="{{ url_for('start_quiz') }}" method="post">
+                <div class="mode-selection">
+                    <button type="submit" name="mode" value="40" class="btn mode-btn">
+                        <h2>Simulacro de Examen</h2>
+                        <p>Responde a un cuestionario aleatorio de 40 preguntas</p>
+                    </button>
+                    
+                    <button type="submit" name="mode" value="all" class="btn mode-btn">
+                        <h2>Responde a Todas las Preguntas</h2>
+                        <p>Practica todas las preguntas disponibles del test</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

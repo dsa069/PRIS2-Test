@@ -1,0 +1,230 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.quiz-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+/* Mode selection */
+.mode-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.mode-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    color: #333;
+}
+
+.mode-btn:first-child {
+    background: linear-gradient(to right bottom, #5d9cec, #7e90c7);
+    border-color: #5d9cec;
+    color: white;
+}
+
+.mode-btn:last-child {
+    background: linear-gradient(to right bottom, #7365d0, #9d44b3);
+    border-color: #6a5acd;
+    color: white;
+}
+
+.mode-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.mode-btn h2 {
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.mode-btn p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Progress bar */
+.progress {
+    margin: 1.5rem 0;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+/* Quiz elements */
+.options-container {
+    margin: 2rem 0;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #e9ecef;
+}
+
+.option-correct {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+    color: #155724 !important;
+}
+
+.option-incorrect {
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+    color: #721c24 !important;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Feedback */
+.feedback-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Results screen */
+#completed-screen {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#completed-screen h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+#completed-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Score display styles */
+.score {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.score span {
+    margin-right: 1.5rem;
+}
+
+.score-result {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.final-score {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.score-explanation {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mode-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-container {
+        padding: 1.5rem;
+    }
+    
+    .score {
+        flex-direction: column;
+    }
+    
+    .score span {
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - {{ mode }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h1>{{ mode }}</h1>
+                <div class="progress">
+                    <span>Pregunta <span id="current-question">{{ current }}</span> de <span id="total-questions">{{ total }}</span></span>
+                    <div class="progress-bar">
+                        <!-- stylelint-disable-next-line -->
+                        <div class="progress-fill" style="width: {{ (current / total) * 100 }}%"></div>
+                    </div>
+                </div>
+                <div class="score">
+                    <span>Correctas: <span id="correct-answers">{{ correct }}</span></span>
+                    <span>Incorrectas: <span id="incorrect-answers">{{ incorrect|default(0) }}</span></span>
+                </div>
+            </div>
+
+            {% if completed %}
+                <div id="completed-screen">
+                    <h2>¡Cuestionario completado!</h2>
+                    <p>Has respondido correctamente <strong>{{ correct }}</strong> de <strong>{{ total }}</strong> preguntas.</p>
+                    <div class="score-result">
+                        <h3>Puntuación final: <span class="final-score">{{ final_score }}</span> / 10</h3>
+                        <p class="score-explanation">Cálculo: (correctas - incorrectas*0.5) / total * 10</p>
+                    </div>
+                    <div class="btn-container">
+                        <a href="{{ url_for('index') }}" class="btn">Volver al inicio</a>
+                    </div>
+                </div>
+            {% else %}
+                <div id="question-container">
+                    <h2 id="question-text">Cargando pregunta...</h2>
+                    <div id="options-container" class="options-container">
+                        <!-- Options will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="feedback-container" id="feedback-container" style="display: none;">
+                    <p id="feedback-text"></p>
+                </div>
+
+                <div class="btn-container">
+                    <button id="next-btn" class="btn" style="display: none;">Siguiente pregunta</button>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
