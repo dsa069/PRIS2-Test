@@ -1,5 +1,6 @@
 # Sample questions - you can expand this list or load from a database
 questions = [
+    # Cuestionario sobre Metodologías de Desarrollo de Software
     {
         "question": "¿Qué modelo de desarrollo se caracteriza por tener fases bien definidas y no permitir retrocesos?",
         "options": ["Modelo en V", "Modelo Espiral", "Modelo en Cascada", "Modelo Iterativo"],
@@ -100,13 +101,14 @@ questions = [
         "options": ["Scrum", "XP", "Kanban", "Modelo en V"],
         "correct": 2  # Kanban (index 2)
     },
+    # Cuestionario sobre Calidad del Software
     {
         "question": "¿Cuál de los siguientes NO es un factor clave en la calidad del software?",
         "options": ["Correctitud", "Mantenibilidad", "Inseguridad", "Eficiencia"],
         "correct": 2  # Inseguridad (index 2)
     },
     {
-        "question": "Los estándares,",
+        "question": "Los estándares ...",
         "options": ["Sólo se enfocan en aspectos técnicos.", "Se enfocan en aspectos técnicos y en ética profesional y responsabilidad social.", "Se enfocan en ética profesional y responsabilidad social pero no en aspectos técnicos.", "Se enfocan en aspectos técnicos y en ética profesional solamente."],
         "correct": 1  # Se enfocan en aspectos técnicos y en ética profesional y responsabilidad social (index 1)
     },
@@ -116,12 +118,12 @@ questions = [
         "correct": 0  # Verdadero (index 0)
     },
     {
-        "question": "El ISO 9000,",
+        "question": "El ISO 9000 ...",
         "options": ["Establece los principios fundamentales para la gestión de la calidad en las organizaciones.", "Establece un marco para gestionar y controlar la calidad en el ciclo de vida del desarrollo.", "Es una norma diseñada para ayudar a las organizaciones a mejorar su eficiencia y sostenibilidad a largo plazo.", "Estándar internacional para la evaluación de la calidad del software."],
         "correct": 0  # Establece los principios fundamentales (index 0)
     },
     {
-        "question": "Las características de la ISO 25000 son",
+        "question": "Las características de la ISO 25000 son ...",
         "options": ["Funcionalidad, usabilidad, fiabilidad, eficiencia, mantenibilidad, seguridad, portabilidad y compatibilidad.", "Funcionalidad, fiabilidad, seguridad y mantenibilidad.", "Funcionalidad, usabilidad, fiabilidad, eficiencia, mantenibilidad, seguridad, portabilidad, compatibilidad y liderazgo.", "Enfoque del cliente, liderazgo, compromiso del personal, enfoque por procesos, mejora continua y toma de decisiones basada en evidencias."],
         "correct": 0  # Funcionalidad, usabilidad, etc. (index 0)
     },
@@ -176,7 +178,7 @@ questions = [
         "correct": 3  # Densidad ciclomática (index 3)
     },
     {
-        "question": "El análisis estático",
+        "question": "El análisis estático ...",
         "options": ["Es fundamental para detectar errores en etapas tardías.", "Es fundamental para detectar errores en etapas tempranas.", "No permite identificar código ejecutable o redundante.", "Evalúa el comportamiento real del sistema bajo diferentes condiciones."],
         "correct": 1  # Es fundamental para detectar errores en etapas tempranas (index 1)
     },
@@ -200,6 +202,7 @@ questions = [
         "options": ["La verificacion garantiza que el software cumple con los requisitos del usuario.", "Las verificación previene problemas de usabilidad y funcionalidad", "La verificación confirma que el desarrollo sigue las especificaciones técnicas.", "La verificación no detecta problemas antes de la entrega del producto."],
         "correct": 2  # La verificación confirma (index 2)
     },
+    # Cuestionario del tema: Métricas de calidad de proyectos software
     {
         "question": "¿Para qué sirven las métricas de calidad a lo largo del desarrollo de un proyecto?",
         "options": ["Únicamente para la fase final de pruebas.", "Solo para la comunicación con los usuarios finales.", "Para identificar áreas de mejora, establecer objetivos realistas y tomar decisiones informadas.", "Principalmente para la gestión de la infraestructura del servidor."],
@@ -300,6 +303,7 @@ questions = [
         "options": ["La experiencia del analista de requisitos.", "El lenguaje de programación utilizado.", "Comunicación de Datos.", "El tamaño del equipo de pruebas."],
         "correct": 2  # Comunicación de Datos (index 2)
     },
+    # Cuestionario sobre Refactorización de Código
     {
         "question": "La refactorización consiste en modificar el código fuente para mejorar su estructura interna sin alterar su comportamiento externo.",
         "options": ["Verdadero", "Falso"],
@@ -390,6 +394,7 @@ questions = [
         "options": ["Puede provocar efectos colaterales si los objetos referenciados se modifican inesperadamente.", "Genera más copias de datos en memoria, lo que puede hacer que el programa sea más lento.", "Hace que cada objeto sea completamente independiente, lo que puede causar redundancia de datos.", "Obliga a usar estructuras de datos ineficientes para representar objetos."],
         "correct": 0  # Puede provocar efectos colaterales... (index 0)
     },
+    # Cuestionario sobre Patrones de Diseño
     {
         "question": "¿Qué es un patrón de diseño en software?",
         "options": ["Un lenguaje de programación", "Un conjunto de reglas de sintaxis", "Una herramienta de depuración", "Una solución estandarizada a problemas comunes en desarrollo de software"],
@@ -490,6 +495,7 @@ questions = [
         "options": ["Observer", "Prototype", "Decorator", "Chain of Responsibility"],
         "correct": 1  # Prototype (index 1)
     },
+    # Cuestionario sobre Desarrollo Basado en Pruebas (TDD)
     {
         "question": "¿Cuál es el enfoque principal del Desarrollo Basado en Pruebas (TDD)?",
         "options": ["Escribir el código primero y luego las pruebas.", "Escribir las pruebas automatizadas antes del código.", "Escribir pruebas manuales después de la implementación.", "No escribir pruebas hasta la fase de integración."],
@@ -590,6 +596,108 @@ questions = [
         "options": ["Enfocarse en lograr una cobertura de pruebas del 100% desde las primeras etapas del proyecto.", "Escribir la mayor cantidad de código funcional posible antes de comenzar a escribir las pruebas.", "Delegar la responsabilidad de escribir las pruebas a un equipo de QA independiente.", "Practicar continuamente, hacer de TDD el comportamiento por defecto y no escribir código sin una prueba que lo necesite."],
         "correct": 3  # Practicar continuamente... (index 3)
     },
+    # Cuestionario sobre Documentación de Software
+    {
+        "question": "¿Por qué es importante escribir documentación en un proyecto software?",
+        "options": ["Para reemplazar la necesidad de escribir buen código", "Para facilitar la incorporación de nuevos miembros al equipo", "Para llevar un control del trabajo del equipo de desarrollo", "Para evitar el uso de control de versiones"],
+        "correct": 1  # Para facilitar la incorporación de nuevos miembros al equipo (index 1)
+    },
+    {
+        "question": "¿Qué documento recoge los requisitos funcionales y no funcionales de un sistema?",
+        "options": ["BRD", "ERS", "Manual de usuario", "Guía de estilos"],
+        "correct": 1  # ERS (index 1)
+    },
+    {
+        "question": "¿Cuál es el estándar principal para documentar pruebas de software?",
+        "options": ["ISO/IEC 15289", "IEEE 829", "UML", "Guía de documentación de Google"],
+        "correct": 1  # IEEE 829 (index 1)
+    },
+    {
+        "question": "¿Qué herramienta permite generar automáticamente documentación de la estructura de una API?",
+        "options": ["Swagger", "Doxygen", "UML", "AsciiDoc"],
+        "correct": 0  # Swagger (index 0)
+    },
+    {
+        "question": "¿Qué ocurre si la documentación se queda desactualizada?",
+        "options": ["Mejora la calidad del código", "Incrementa la velocidad del desarrollo", "Genera confusión y errores", "No pasa nada"],
+        "correct": 2  # Genera confusión y errores (index 2)
+    },
+    {
+        "question": "¿Qué estándar define todos los documentos necesarios a lo largo del ciclo de vida del software?",
+        "options": ["IEEE 830", "ISO/IEC 15289", "IEEE 831", "IEEE 829"],
+        "correct": 1  # ISO/IEC 15289 (index 1)
+    },
+    {
+        "question": "¿Qué herramienta es más comúnmente usada en proyectos Python para documentar?",
+        "options": ["JavaDoc", "Docusaurus", "Sphinx", "MkDocs"],
+        "correct": 2  # Sphinx (index 2)
+    },
+    {
+        "question": "¿Qué representa un wireframe?",
+        "options": ["El diseño gráfico final", "La estructura base de la interfaz de usuario", "El comportamiento backend", "El flujo de las pruebas unitarias"],
+        "correct": 1  # La estructura base de la interfaz de usuario (index 1)
+    },
+    {
+        "question": "¿Qué característica deben tener los comentarios en el código?",
+        "options": ["Ser largos y explicativos", "Ser breves, claros y precisos", "Específicos para clases abstractas", "Solo necesarios en código de prueba"],
+        "correct": 1  # Ser breves, claros y precisos (index 1)
+    },
+    {
+        "question": "¿Qué debe incluir un plan de pruebas?",
+        "options": ["Capturas de pantalla", "Estrategia, herramientas y criterios de aceptación", "Listado de bugs", "Listado de riesgos"],
+        "correct": 1  # Estrategia, herramientas y criterios de aceptación (index 1)
+    },
+    {
+        "question": "¿Qué contiene una historia de usuario?",
+        "options": ["Solo requisitos técnicos", "Rol, acción, motivo y criterio de aceptación", "Código fuente", "Requisitos funcionales y no funcionales"],
+        "correct": 1  # Rol, acción, motivo y criterio de aceptación (index 1)
+    },
+    {
+        "question": "¿Cuál de los siguientes no es un lenguaje de marcado?",
+        "options": ["AsciiDoc", "Markdown", "reStructuredText", "UML"],
+        "correct": 3  # UML (index 3)
+    },
+    {
+        "question": "¿Cuál de las siguientes es una guía de estilo reconocida?",
+        "options": ["PostgreSQL Style Guide", "Microsoft Writing Style Guide", "Manual de Selenium", "PyDoc Manual"],
+        "correct": 1  # Microsoft Writing Style Guide (index 1)
+    },
+    {
+        "question": "¿Cuál es el objetivo principal de un manual de usuario?",
+        "options": ["Describir la arquitectura interna", "Enseñar al usuario cómo utilizar el software", "Listar los bugs del sistema", "Mostrar la implementación de la API"],
+        "correct": 1  # Enseñar al usuario cómo utilizar el software (index 1)
+    },
+    {
+        "question": "¿Qué herramienta permite documentar, probar y compartir APIs en entornos colaborativos?",
+        "options": ["Swagger", "JavaDoc", "Postman", "Selenium"],
+        "correct": 2  # Postman (index 2)
+    },
+    {
+        "question": "¿Cuál de los siguientes no es un diagrama UML?",
+        "options": ["Diagrama de Clases", "Diagrama de Secuencia", "Diagrama de Requisitos", "Diagrama de Casos de Uso"],
+        "correct": 2  # Diagrama de Requisitos (index 2)
+    },
+    {
+        "question": "¿Para qué sirve un registro de errores?",
+        "options": ["Desarrollar wireframes", "Documentar decisiones de diseño", "Registrar incidencias detectadas y soluciones aplicadas", "Mostrar el historial de versiones"],
+        "correct": 2  # Registrar incidencias detectadas y soluciones aplicadas (index 2)
+    },
+    {
+        "question": "¿Qué propone el modelo C4?",
+        "options": ["Estandarizar casos de prueba", "Documentar arquitectura en distintos niveles de abstracción", "Medir rendimiento de aplicaciones", "Gestionar APIs externas"],
+        "correct": 1  # Documentar arquitectura en distintos niveles de abstracción (index 1)
+    },
+    {
+        "question": "¿Qué debe contener un caso de prueba?",
+        "options": ["Solo el resultado esperado", "Diagrama de flujo de la prueba", "ID, descripción, precondiciones, entradas, pasos y resultados esperados", "Lista de errores históricos"],
+        "correct": 2  # ID, descripción, precondiciones, entradas, pasos y resultados esperados (index 2)
+    },
+    {
+        "question": "¿Cuál es un problema habitual en la documentación de software?",
+        "options": ["Usar herramientas modernas", "Tener documentación desincronizada con el código fuente", "Generar documentación automática", "Demasiada documentación"],
+        "correct": 1  # Tener documentación desincronizada con el código fuente (index 1)
+    },
+    # Cuestionario sobre Contenerización de Aplicaciones
     {
         "question": "¿Qué es la contenerización de aplicaciones?",
         "options": ["Proceso de ejecutar software en la nube", "Virtualización completa de hardware", "Empaquetar aplicaciones y dependencias en contenedores", "Ejecutar múltiples sistemas operativos a la vez"],
@@ -690,8 +798,9 @@ questions = [
         "options": ["Inicia un contenedor", "Detiene una imagen", "Descarga una imagen del registro", "Ejecuta una red"],
         "correct": 2  # Descarga una imagen del registro (index 2)
     },
+    # Cuestionario sobre Integración Continua y Despliegue Continuo (CI/CD)
     {
-        "question": "El despliegue continuo es",
+        "question": "El despliegue continuo es ...",
         "options": ["una estrategia de desarrollo en la que los cambios de código de la aplicación se publican automáticamente al entorno de producción tras pasar una serie de pruebas predefinidas.", "una técnica de diseño gráfico que permite optimizar la resolución de las imágenes antes del despliegue del sitio web.", "un proceso manual en el que los desarrolladores publican actualizaciones solo después de completar todo el ciclo de desarrollo y aprobación por parte del equipo de marketing.", "una metodología de respaldo que almacena copias del código fuente cada vez que un desarrollador guarda un archivo."],
         "correct": 0  # una estrategia de desarrollo... (index 0)
     },
@@ -721,7 +830,7 @@ questions = [
         "correct": 2  # Reducción de riesgos de ataques y fugas de datos (index 2)
     },
     {
-        "question": "Un rollback es",
+        "question": "Un rollback es ...",
         "options": ["el proceso de realizar pruebas de seguridad adicionales en una nueva versión antes de lanzarla.", "el proceso de volver a una versión anterior de la aplicación cuando una actualización presenta problemas.", "la acción de compilar el código fuente para crear una nueva versión de la aplicación.", "el proceso de agregar nuevas funcionalidades a una aplicación sin necesidad de realizar pruebas"],
         "correct": 1  # el proceso de volver a una versión anterior... (index 1)
     },
@@ -736,7 +845,7 @@ questions = [
         "correct": 2  # Integración Continua (index 2)
     },
     {
-        "question": "Github actions se utiliza para…",
+        "question": "Github actions se utiliza para …",
         "options": ["la creación de bases de datos en la nube sin necesidad de configuración.", "el despliegue de páginas estáticas.", "la automatización de la integración de diseño gráfico en la aplicación.", "gestionar la documentación en producción."],
         "correct": 1  # el despliegue de páginas estáticas (index 1)
     },
@@ -756,7 +865,7 @@ questions = [
         "correct": 1  # Es un archivo muy pesado (index 1)
     },
     {
-        "question": "En un sistema centralizado…",
+        "question": "En un sistema centralizado …",
         "options": ["Cada persona guarda sus cambios.", "Todos los cambios se guardan en un único lugar, obligando a una conexión constante.", "Los cambios se almacenan en múltiples servidores dispersos para mayor seguridad y disponibilidad.", "Los cambios nunca están visibles para los usuarios."],
         "correct": 1  # Todos los cambios se guardan en un único lugar... (index 1)
     },
@@ -790,6 +899,7 @@ questions = [
         "options": ["Gitlab.", "Jenkins.", "Cloudfare.", "Travis CI."],
         "correct": 2  # Cloudfare (index 2)
     },
+    # Cuestionario sobre Aspectos Legales y Éticos en el Desarrollo de Software
     {
         "question": "¿Cuál es el objetivo principal de los aspectos legales y éticos en el desarrollo de software?",
         "options": ["Aumentar los beneficios de las empresas de software.", "Proteger a los usuarios, la sociedad y la integridad profesional.", "Agilizar el proceso de desarrollo de software.", "Reducir los costes de producción del software."],
@@ -890,6 +1000,7 @@ questions = [
         "options": ["Añadir consideraciones éticas al final del proyecto.", "Integrar principios éticos en cada etapa del desarrollo desde el diseño.", "Externalizar la responsabilidad ética a un equipo especializado.", "Cumplir con los requisitos funcionales sin considerar la ética."],
         "correct": 1  # Integrar principios éticos en cada etapa... (index 1)
     },
+    # Cuestionario sobre Securización de aplicaciones web
     {
         "question": "¿Cuál de los siguientes es un pilar del modelo CIA en seguridad?",
         "options": ["Compatibilidad", "Integridad", "Accesibilidad", "Escalabilidad"],
@@ -985,6 +1096,7 @@ questions = [
         "options": ["GDPR", "PCI-DSS", "HIPAA", "ISO 27001"],
         "correct": 1  # PCI-DSS (index 1)
     },
+    # Cuestionario sobre Ingeniería Inversa
     {
         "question": "¿En qué consiste el desensamblado de un código?",
         "options": ["Programa escrito en un lenguaje de alto nivel se traduce a un lenguaje de bajo nivel", "Convierte el binario en instrucciones de lenguaje ensamblador", "Traduce el código en lenguaje de alto nivel a lenguaje binario", "Herramienta que traduce un archivo de código binario a un lenguaje de alto nivel, intentando reconstruir el código fuente original"],
@@ -1085,6 +1197,7 @@ questions = [
         "options": ["Recolección de información", "Análisis estructural", "Validación", "Modelado y documentación"],
         "correct": 2  # Validación (index 2)
     },
+    # Cuestionario sobre Vibe Coding y programación asistida por la IA
     {
         "question": "¿Qué distingue principalmente al \"vibe coding\" de otros enfoques asistidos por IA?",
         "options": ["Que solo utiliza lenguaje natural.", "Que acepta las sugerencias de la IA sin revisar en detalle.", "Que se basa en compilar constantemente.", "Que se ejecuta exclusivamente en navegadores."],
@@ -1185,6 +1298,7 @@ questions = [
         "options": ["Aumenta la velocidad sin consecuencias.", "Se puede incurrir en demandas por violación de licencias.", "Se compila más rápido siempre.", "Mejora automáticamente la seguridad."],
         "correct": 1  # Se puede incurrir en demandas por violación de licencias (index 1)
     },
+    # Cuestionario sobre Legacy Code
     {
         "question": "¿Qué es el \"legacy code\"?",
         "options": ["Código muy antiguo.", "Código heredado difícil de manejar.", "Código mal documentado."],
@@ -1285,11 +1399,7 @@ questions = [
         "options": ["Cambiar todo de una vez.", "Anteponer tu criterio a la documentación.", "Ser cauteloso y validar cada cambio."],
         "correct": 2  # Ser cauteloso y validar cada cambio (index 2)
     },
-    {
-        "question": "¿Qué busca conseguir al analizar el problema antes de iniciar un proyecto de software?",
-        "options": ["Definir el lenguaje de programación a utilizar.", "Entender qué se quiere hacer y qué se quiere conseguir para no afectar la calidad.", "Establecer el cronograma detallado de tareas.", "Asignar los roles y responsabilidades del equipo."],
-        "correct": 1  # Entender qué se quiere hacer (index 1)
-    },
+    # Cuestionario sobre Protocolo Modelo-Contexto (MCP)
     {
         "question": "¿Cuál es el objetivo principal del Protocolo Modelo-Contexto (MCP)?",
         "options": ["Desarrollar un nuevo modelo de IA", "Establecer un protocolo estandarizado para conectar modelos de IA con fuentes de datos externas", "Crear un sistema operativo para dispositivos inteligentes", "Mejorar la velocidad de conexión entre servidores físicos"],
